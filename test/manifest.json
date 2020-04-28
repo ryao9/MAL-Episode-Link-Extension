@@ -1,12 +1,10 @@
 {
-    "name": "Hello World!",
-    "version": "1.0",
-    "description": "Test extension",
+    "name": "My plugin",
+    "version": "0.0.1",
+    "description": "This is the full description of the plugin",
     "manifest_version": 2,
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["hello_world.js"]
-        }
-    ]
-}
+    "browser_action": {
+      "default_popup": "./index.html",
+      "default_title": "Open the popup"
+    }
+  }
